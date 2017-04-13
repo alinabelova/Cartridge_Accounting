@@ -1,0 +1,12 @@
+C:\Users\Alina\Documents\Visual Studio 2015\Projects\CartridgeAccounting\CartridgeAccounting.DAL\bin\Debug\CartridgeAccounting.DAL.dll.config
+C:\Users\Alina\Documents\Visual Studio 2015\Projects\CartridgeAccounting\CartridgeAccounting.DAL\bin\Debug\CartridgeAccounting.DAL.dll
+C:\Users\Alina\Documents\Visual Studio 2015\Projects\CartridgeAccounting\CartridgeAccounting.DAL\bin\Debug\CartridgeAccounting.DAL.pdb
+C:\Users\Alina\Documents\Visual Studio 2015\Projects\CartridgeAccounting\CartridgeAccounting.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Alina\Documents\Visual Studio 2015\Projects\CartridgeAccounting\CartridgeAccounting.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alina\Documents\Visual Studio 2015\Projects\CartridgeAccounting\CartridgeAccounting.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Alina\Documents\Visual Studio 2015\Projects\CartridgeAccounting\CartridgeAccounting.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alina\Documents\Visual Studio 2015\Projects\CartridgeAccounting\CartridgeAccounting.DAL\obj\Debug\CartridgeAccounting.DAL.Migrations.AddCartridgeMigration.resources
+C:\Users\Alina\Documents\Visual Studio 2015\Projects\CartridgeAccounting\CartridgeAccounting.DAL\obj\Debug\CartridgeAccounting.DAL.csproj.GenerateResource.Cache
+C:\Users\Alina\Documents\Visual Studio 2015\Projects\CartridgeAccounting\CartridgeAccounting.DAL\obj\Debug\CartridgeAccounting.DAL.dll
+C:\Users\Alina\Documents\Visual Studio 2015\Projects\CartridgeAccounting\CartridgeAccounting.DAL\obj\Debug\CartridgeAccounting.DAL.pdb
+C:\Users\Alina\Documents\Visual Studio 2015\Projects\CartridgeAccounting\CartridgeAccounting.DAL\obj\Debug\CartridgeAccounting.DAL.csprojResolveAssemblyReference.cache

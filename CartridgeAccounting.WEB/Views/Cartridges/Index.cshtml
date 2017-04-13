@@ -1,0 +1,58 @@
+﻿<div id="grid"></div>
+<script>
+    $("#grid").kendoGrid({
+        height: 400,
+        columns: [
+            //{field: "Creation"},
+            //{field: "DateOfChange"},
+            { field: "Type", title: "Тип" },
+            { field: "Model", title: "Модель" },
+            { field: "CompatiblePrinter", title: "Совместимый принтер" },
+            { field: "Color", title: "Цвет" },
+            { field: "Resource", title: "Ресурсоемкость(стр)" },
+            { field: "WriteOff", title: "Списан" },
+            {command: [ "edit" , "destroy"], width: 180 }
+        ],
+        toolbar: ["excel"],
+        dataSource: {
+            type: "aspnetmvc-ajax", 
+            transport: {
+                read: {
+                    url: "Cartridges_Read"
+                }, 
+                update: { 
+                    url: "Cartridges_Update"
+                },
+                destroy: { 
+                    url: "Cartridges_Destroy"
+                }
+            },
+            schema: {
+                data: "Data",
+                model: {
+                    id: "Id",
+                    fields: {
+                        Id: { type: "number", editable: false },
+                        Creation: { type: "date", editable: false, hidden: true},
+                        DateOfChange: { type: "date", editable: false, hidden: true },
+                        Type: { type: "string", editable: false },
+                        Model: { type: "string", editable: false },
+                        CompatiblePrinter: { type: "string", editable: false },
+                        Color: { type: "string", editable: false },
+                        Resource: { type: "string", editable: false },
+                        WriteOff: { type: "boolean"}
+                    }
+                }
+            }
+        },
+        editable: "inline",
+        pageable: true,
+        sortable: {
+            mode: "single"
+        },
+        filterable: true,
+        scrollable: true
+    })
+
+</script>
+@Html.ActionLink("Добавить принтер", "Create")
