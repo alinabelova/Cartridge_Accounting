@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
- using System.Data.Entity.Validation;
- using System.Linq;
+using System.Data.Entity.Validation;
+using System.Linq;
 using System.Net;
- using System.Threading.Tasks;
- using System.Web;
+using System.Threading.Tasks;
+using System.Web;
 using System.Web.Mvc;
- using CartridgeAccounting.DAL;
- using Kendo.Mvc.Extensions;
+using CartridgeAccounting.DAL;
+using Kendo.Mvc.Extensions;
 using Kendo.Mvc.UI;
 using CartridgeAccounting.DAL.Models;
- using CartridgeAccounting.WEB.Models;
- using HttpVerbs = System.Web.Mvc.HttpVerbs;
+using CartridgeAccounting.WEB.Models;
+using HttpVerbs = System.Web.Mvc.HttpVerbs;
 
 namespace CartridgeAccounting.WEB.Controllers
 {
@@ -21,11 +21,17 @@ namespace CartridgeAccounting.WEB.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
         private List<CartridgeType> _cartridgeTypes;
+        
         public ActionResult Index()
         {
             return View();
         }
-
+        
+        /// <summary>
+        /// загрузка списка картриджей
+        /// </summary>
+        /// <param name="DataSourceRequest">request</param>
+        /// <returns></returns>
         public ActionResult Cartridges_Read([DataSourceRequest] DataSourceRequest request)
         {
             DataSourceResult result = null;
@@ -54,6 +60,7 @@ namespace CartridgeAccounting.WEB.Controllers
             }
         }
 
+     
         [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult Cartridges_Update([DataSourceRequest]DataSourceRequest request, Cartridge cartridge)
         {
